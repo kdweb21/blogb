@@ -1,0 +1,29 @@
+<!-- navbar start -->
+    <!-- Dropdown Structure -->
+
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/category">All Category</a></li>
+        <li class="divider"></li>
+      {% for  c in cats %}       
+      <li><a href="/category/{{c.url}}">{{c.category_title}} </a></li>      
+      {% endfor %}
+    </ul>
+
+      <nav class="bg-primary">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="/" class="brand-logo">BlogBuzz</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/about">About</a></li>
+              <!-- Dropdown Trigger -->
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                  >Dropdown<i class="material-icons right">arrow_drop_down</i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->

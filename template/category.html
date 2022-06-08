@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Category
+  
+{% endblock title %}
+
+{% block body %}
+  
+<div class="container">
+    {% for c in cat %}    
+    <div class="row">
+        <a href="{{c.url}}"><b>{{c.category_title}}</b></a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock body %}
